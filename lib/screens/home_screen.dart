@@ -99,7 +99,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         padding: const EdgeInsets.fromLTRB(24, 0, 24, 100),
                         sliver: SliverList.separated(
                           itemCount: transactions.length,
-                          separatorBuilder: (_, __) =>
+                          separatorBuilder: (_, _EmptyState) =>
                               const SizedBox(height: 10),
                           itemBuilder: (ctx, i) {
                             return TransactionTile(
